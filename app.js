@@ -10,11 +10,17 @@ function onReady() {
     let newLi = document.createElement('li');
     let checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
 
     newLi.textContent = title;
     newLi.appendChild(checkbox);
+    newLi.appendChild(deleteButton);
 
     toDoList.appendChild(newLi);
+    deleteButton.onclick = function() {
+      toDoList.removeChild(newLi);
+    };
 
     newToDoText.value = '';
   });
