@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+#toDoList {
+    margin: 0 auto;
+    width: 350px;
+} 
+
+i:hover {
+    cursor: pointer;
+} 
+
+
+.custom {
+    cursor: pointer;
+}
